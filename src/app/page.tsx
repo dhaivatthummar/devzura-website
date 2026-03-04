@@ -31,7 +31,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-12"
             style={{
               background: "rgba(37, 99, 235, 0.1)",
               color: "var(--color-accent)",
@@ -44,7 +44,7 @@ export default function Home() {
 
           {/* Heading */}
           <h1
-            className="text-4xl sm:text-6xl md:text-7xl font-bold font-[var(--font-heading)] leading-[1.1] mb-8"
+            className="text-4xl sm:text-6xl md:text-7xl font-bold font-[var(--font-heading)] leading-[1.1] mb-12"
             style={{ color: "var(--text)" }}
           >
             Something <span className="gradient-text">Exceptional</span> is on the Way
@@ -52,7 +52,7 @@ export default function Home() {
 
           {/* Subheading */}
           <p
-            className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12"
+            className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-16"
             style={{ color: "var(--text-secondary)" }}
           >
             Devzura IT Labs is crafting a new digital experience. We&apos;re busy building 
