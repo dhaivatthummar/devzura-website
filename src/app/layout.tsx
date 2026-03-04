@@ -3,7 +3,6 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -90,7 +89,6 @@ export default function RootLayout({
         <ThemeProvider>
           <Navbar />
           <main className="pt-[72px] lg:pt-[80px]">{children}</main>
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

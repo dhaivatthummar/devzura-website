@@ -5,7 +5,7 @@ import { Mail, Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="relative min-h-[calc(100vh-144px)] flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden">
       {/* Animated grid background */}
       <div className="absolute inset-0 grid-pattern opacity-10" />
 
@@ -55,7 +55,7 @@ export default function Home() {
             className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12"
             style={{ color: "var(--text-secondary)" }}
           >
-            Devzura IT Labs is crafting a new digital experience. We're busy building 
+            Devzura IT Labs is crafting a new digital experience. We&apos;re busy building 
             powerful software products and scalable solutions for the future.
           </p>
 
