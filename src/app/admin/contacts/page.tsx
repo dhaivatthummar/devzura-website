@@ -1,10 +1,11 @@
 "use client";
 
+export const dynamic = "force-dynamic";
+
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Mail,
-  Eye,
   Trash2,
   CheckCircle,
   Clock,
@@ -24,15 +25,15 @@ export default function AdminContactsPage() {
   const [loading, setLoading] = useState(true);
   const [selectedContact, setSelectedContact] = useState<ContactSubmission | null>(null);
 
-  useEffect(() => {
-    fetchContacts();
-  }, []);
-
   async function fetchContacts() {
     const data = await getContacts();
     setContacts(data);
     setLoading(false);
   }
+
+  useEffect(() => {
+    fetchContacts();
+  }, []);
 
   const handleView = async (contact: ContactSubmission) => {
     setSelectedContact(contact);

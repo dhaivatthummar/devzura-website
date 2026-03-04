@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = "force-dynamic";
+
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -8,7 +10,6 @@ import {
   Trash2,
   X,
   Save,
-  Image as ImageIcon,
 } from "lucide-react";
 import {
   getProjects,
